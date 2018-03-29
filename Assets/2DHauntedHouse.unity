@@ -287,11 +287,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59d8f2c15de89ac4ba7c8746ce7b7219, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &442625959 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1579638741160464, guid: 59d8f2c15de89ac4ba7c8746ce7b7219,
-    type: 2}
-  m_PrefabInternal: {fileID: 442625958}
 --- !u!114 &442625965 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114690996047514540, guid: 59d8f2c15de89ac4ba7c8746ce7b7219,
@@ -520,12 +515,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 442625959}
-        m_MethodName: 
+      - m_Target: {fileID: 442625965}
+        m_MethodName: PowerDown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1081,12 +1076,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 442625959}
-        m_MethodName: 
+      - m_Target: {fileID: 442625965}
+        m_MethodName: PowerUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1493,7 +1488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1733179272
 Transform:
   m_ObjectHideFlags: 0

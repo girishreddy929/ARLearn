@@ -41,7 +41,7 @@ public class MoveControl : MonoBehaviour {
 			                                   ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingExtent);
 
 		if (hitResults.Count > 0) { // If a hit is found, set the position and reset the rotation.
-			transform.rotation = Quaternion.Euler (Vector3.zero);
+			transform.rotation = Quaternion.Euler (-90,0,0);
 			transform.position = UnityARMatrixOps.GetPosition (hitResults[0].worldTransform);
 		}
 	}
@@ -84,10 +84,18 @@ public class MoveControl : MonoBehaviour {
 	}
 
 	public void GoUp(){
-		transform.position += new Vector3 (0.0f, 0.02f, 0.0f)*Time.deltaTime;
+		transform.position += new Vector3 (0.0f, 0.02f, 0.0f);
 	}
 
 	public void GoDown(){
-		transform.position -= new Vector3 (0.0f, 0.02f, 0.0f)*Time.deltaTime;
+		transform.position -= new Vector3 (0.0f, 0.02f, 0.0f);
+	}
+
+	public void PowerUp(){
+		transform.localScale += new Vector3 (0.5f, 0.5f, 0.5f);
+	}
+
+	public void PowerDown(){
+		transform.localScale -= new Vector3 (0.5f, 0.5f, 0.5f);
 	}
 }
