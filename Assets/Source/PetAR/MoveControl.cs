@@ -82,4 +82,12 @@ public class MoveControl : MonoBehaviour {
 		Vector3 lookDirection = (yRotation * inputAxes).normalized;
 		transform.rotation = Quaternion.LookRotation (lookDirection);
 	}
+
+	public void GoUp(){
+		transform.position += new Vector3 (0.0f, 0.02f, 0.0f)*Time.deltaTime;
+	}
+
+	public void GoDown(){
+		transform.position -= new Vector3 (0.0f, 0.02f, 0.0f)*Time.deltaTime;
+	}
 }
