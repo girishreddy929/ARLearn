@@ -85,17 +85,21 @@ public class MoveControl : MonoBehaviour {
 
 	public void GoUp(){
 		transform.position += new Vector3 (0.0f, 0.02f, 0.0f);
+		transform.rotation = Quaternion.Euler (-90,0,0);
 	}
 
 	public void GoDown(){
 		transform.position -= new Vector3 (0.0f, 0.02f, 0.0f);
+		transform.rotation = Quaternion.Euler (-90,0,0);
 	}
 
 	public void PowerUp(){
 		transform.localScale += new Vector3 (0.5f, 0.5f, 0.5f);
+		transform.rotation= Quaternion.Euler (-90,0,0);
 	}
 
 	public void PowerDown(){
 		transform.localScale -= new Vector3 (0.5f, 0.5f, 0.5f);
+		transform.rotation = Quaternion.Euler (-90,0,0);
 	}
 }
